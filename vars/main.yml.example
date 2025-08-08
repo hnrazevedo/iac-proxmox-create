@@ -1,0 +1,15 @@
+---
+provider:
+  git: git@github.com:hnrazevedo/iac-terraform-proxmox-vm.git
+  version: main
+
+host:
+  api_url: https://192.168.100.200:8006/api2/json
+  authentication:
+    user: terraform@pve
+    password: AAAAAAAA
+  tls_insecure: true
+  debug: false
+  log:
+    enable: false
+    file: terraform-proxmox.log
