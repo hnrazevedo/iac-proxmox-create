@@ -7,9 +7,7 @@
   ansible.builtin.include_role:
     name: iac-terraform-runner
   vars:
-    provider: "{{ provider }}"
     state: apply
     variables:
       terraform_variables:
         vm: "{{ resource }}"
-        host: "{{ host }}"
