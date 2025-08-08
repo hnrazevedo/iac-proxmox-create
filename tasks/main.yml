@@ -1,10 +1,10 @@
 ---
 - name: Include default vars
   ansible.builtin.include_vars:
-    file: vars/main.yml
+    file: "{{ role_path }}/vars/main.yml"
 
 - debug: 
-    var: project
+    var: provider
 
 - name: Create a VM
   ansible.builtin.include_role:
