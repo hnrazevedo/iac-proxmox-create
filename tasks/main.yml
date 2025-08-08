@@ -3,6 +3,9 @@
   ansible.builtin.include_vars:
     file: vars/main.yml
 
+- debug: 
+    var: project
+
 - name: Create a VM
   ansible.builtin.include_role:
     name: iac-terraform-runner
